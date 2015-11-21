@@ -15,6 +15,10 @@
 		4CF090511BF606F6008B20B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF0904F1BF606F6008B20B9 /* LaunchScreen.storyboard */; };
 		4CF0905C1BF606F6008B20B9 /* Overdue_Task_ListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0905B1BF606F6008B20B9 /* Overdue_Task_ListTests.m */; };
 		4CF090671BF606F6008B20B9 /* Overdue_Task_ListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF090661BF606F6008B20B9 /* Overdue_Task_ListUITests.m */; };
+		4CF090761BF607A2008B20B9 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF090751BF607A2008B20B9 /* AddTaskViewController.m */; };
+		4CF090791BF607B2008B20B9 /* DetailTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF090781BF607B2008B20B9 /* DetailTaskViewController.m */; };
+		4CF0907C1BF607C7008B20B9 /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0907B1BF607C7008B20B9 /* EditTaskViewController.m */; };
+		4CF090801BF60F52008B20B9 /* TaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF0907F1BF60F52008B20B9 /* TaskModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,15 @@
 		4CF090621BF606F6008B20B9 /* Overdue Task ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Overdue Task ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF090661BF606F6008B20B9 /* Overdue_Task_ListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Overdue_Task_ListUITests.m; sourceTree = "<group>"; };
 		4CF090681BF606F6008B20B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF090741BF607A2008B20B9 /* AddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
+		4CF090751BF607A2008B20B9 /* AddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		4CF090771BF607B2008B20B9 /* DetailTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTaskViewController.h; sourceTree = "<group>"; };
+		4CF090781BF607B2008B20B9 /* DetailTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTaskViewController.m; sourceTree = "<group>"; };
+		4CF0907A1BF607C7008B20B9 /* EditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTaskViewController.h; sourceTree = "<group>"; };
+		4CF0907B1BF607C7008B20B9 /* EditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTaskViewController.m; sourceTree = "<group>"; };
+		4CF0907D1BF60DF9008B20B9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4CF0907E1BF60F52008B20B9 /* TaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskModel.h; sourceTree = "<group>"; };
+		4CF0907F1BF60F52008B20B9 /* TaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C8CD1781BFA3AA900B1E539 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CF0907E1BF60F52008B20B9 /* TaskModel.h */,
+				4CF0907F1BF60F52008B20B9 /* TaskModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		4CF090351BF606F5008B20B9 = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +123,18 @@
 		4CF090401BF606F5008B20B9 /* Overdue Task List */ = {
 			isa = PBXGroup;
 			children = (
+				4CF0904A1BF606F6008B20B9 /* Main.storyboard */,
 				4CF090441BF606F6008B20B9 /* AppDelegate.h */,
 				4CF090451BF606F6008B20B9 /* AppDelegate.m */,
 				4CF090471BF606F6008B20B9 /* ViewController.h */,
 				4CF090481BF606F6008B20B9 /* ViewController.m */,
-				4CF0904A1BF606F6008B20B9 /* Main.storyboard */,
+				4CF090741BF607A2008B20B9 /* AddTaskViewController.h */,
+				4CF090751BF607A2008B20B9 /* AddTaskViewController.m */,
+				4CF090771BF607B2008B20B9 /* DetailTaskViewController.h */,
+				4CF090781BF607B2008B20B9 /* DetailTaskViewController.m */,
+				4CF0907A1BF607C7008B20B9 /* EditTaskViewController.h */,
+				4CF0907B1BF607C7008B20B9 /* EditTaskViewController.m */,
+				4C8CD1781BFA3AA900B1E539 /* Models */,
 				4CF0904D1BF606F6008B20B9 /* Assets.xcassets */,
 				4CF0904F1BF606F6008B20B9 /* LaunchScreen.storyboard */,
 				4CF090521BF606F6008B20B9 /* Info.plist */,
@@ -118,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				4CF090421BF606F5008B20B9 /* main.m */,
+				4CF0907D1BF60DF9008B20B9 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -274,8 +304,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF090491BF606F6008B20B9 /* ViewController.m in Sources */,
+				4CF090761BF607A2008B20B9 /* AddTaskViewController.m in Sources */,
 				4CF090461BF606F6008B20B9 /* AppDelegate.m in Sources */,
+				4CF090801BF60F52008B20B9 /* TaskModel.m in Sources */,
+				4CF0907C1BF607C7008B20B9 /* EditTaskViewController.m in Sources */,
 				4CF090431BF606F6008B20B9 /* main.m in Sources */,
+				4CF090791BF607B2008B20B9 /* DetailTaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "Overdue Task List/PrefixHeader.pch";
 				INFOPLIST_FILE = "Overdue Task List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.Overdue-Task-List";
@@ -425,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "Overdue Task List/PrefixHeader.pch";
 				INFOPLIST_FILE = "Overdue Task List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.Overdue-Task-List";
@@ -499,6 +535,7 @@
 				4CF0906D1BF606F6008B20B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CF0906E1BF606F6008B20B9 /* Build configuration list for PBXNativeTarget "Overdue Task ListTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +544,7 @@
 				4CF090701BF606F6008B20B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CF090711BF606F6008B20B9 /* Build configuration list for PBXNativeTarget "Overdue Task ListUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +553,7 @@
 				4CF090731BF606F6008B20B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

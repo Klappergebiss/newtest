@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddTaskViewController.h"
+#import "DetailTaskViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<AddTaskViewControllerDelegate, UITableViewDataSource, UITableViewDelegate, DetailTaskViewControllerDelegate>
 
+- (IBAction)createTaskButtonPressed:(UIBarButtonItem *)sender;
+- (IBAction)reorderButtonPressed:(UIBarButtonItem *)sender;
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *tasksArray;
 
 @end
 
