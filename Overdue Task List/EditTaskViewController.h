@@ -15,7 +15,7 @@
 
 @end
 
-@interface EditTaskViewController : UIViewController<UITextFieldDelegate, UITextViewDelegate>
+@interface EditTaskViewController : UIViewController<UITextViewDelegate, UITextFieldDelegate>
 - (IBAction)saveButtonPressed:(UIBarButtonItem *)sender;
 
 @property (weak, nonatomic) id<EditTaskViewControllerDelegate> delegate;

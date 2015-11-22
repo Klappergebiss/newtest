@@ -17,7 +17,7 @@
 
 @end
 
-@interface AddTaskViewController : UIViewController<UITextViewDelegate, UITextFieldDelegate>
+@interface AddTaskViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate>
 
 - (IBAction)cancelButtonPressed:(UIButton *)sender;
 - (IBAction)addTaskButtonPressed:(UIButton *)sender;

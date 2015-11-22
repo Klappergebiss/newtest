@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.textView.delegate = self;
-    self.textField.delegate = self;
+    self.descriptionTextView.delegate = self;
+    self.titleTextField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,13 +61,13 @@
 #pragma mark - UITextViewDelegate and UITextFieldDelegate
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [self.textField resignFirstResponder];
+    [self.titleTextField resignFirstResponder];
     return YES;
 }
 
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
     if ([text isEqualToString:@"\n"]) {
-        [self.textView resignFirstResponder];
+        [self.descriptionTextView resignFirstResponder];
         return NO;
     } else return YES;
 }
